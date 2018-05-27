@@ -11,3 +11,4 @@ if __name__ == '__main__' :
     del_result = m_coll.delete_one({'_id': ins_result.inserted_id})
     print(del_result.raw_result)
     print(m_coll.distinct('first-name'))
+    m_conn.close()
